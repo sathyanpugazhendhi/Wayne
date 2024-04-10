@@ -1,0 +1,40 @@
+/* media queiry */
+@media screen and (max-width:600px) {
+    .searchbar{
+        width: 50%;
+    }
+}
+/* collections */
+/* searchbar */
+.searchbar input{
+background: transparent;
+border: none;
+width: 100%;
+}
+.searchbar{
+    display: flex;
+    
+    margin: 30px 40px 30px 40px;
+    
+    border: 2px #1D232C solid;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+.searchbar input:focus{
+    outline: none;
+}
+/* products alignment */
+.products-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.products{
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 20%;
+}
+.products img{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}

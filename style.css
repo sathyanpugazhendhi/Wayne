@@ -1,0 +1,188 @@
+:root{
+    --font--family: "Poppins", sans-serif;
+    
+    /* colors */
+    --darkblue-- : #1D232C;
+    --white-- : #ffffff;
+    --greyishwhite-- : hsl(230, 30%, 96%);
+
+    /*box shadow*/
+    --shadow-1--: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+*{
+   padding: 0;
+   margin: 0;
+   font-family: var(--font--family);
+    
+}
+/* navigation bar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: var(--shadow-1--);
+
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-link a{
+    text-decoration: none;
+    color: var(--darkblue--);
+}
+.navbar-link a:hover{
+   text-decoration: underline;
+   color: var(--darkblue--);
+   animation-delay: 800ms;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+/* media queries */
+@media screen and (max-width:600px) {
+
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .image-header{
+        display: none;
+    }
+    .header1{
+        text-align: center;
+    }
+    
+  .cs11{
+    display: none;
+  }
+  .cs12{
+    display: none;
+  }
+    .cs2{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .arrivals-wrapper-parent-heading{
+        text-align: center;
+    }
+     .New-Letter-Wrapper div{
+        display: none;
+     }
+     .footer{
+        text-align: center;
+     }
+}
+/* side-navbar */
+.Side-navbar-links{
+    background-color: var(--darkblue--);
+    color: var(--white--);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    transition: 1.2s;
+    
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: var(--white--);
+
+}
+.side-navbar-links p{
+   margin: 0px 20px 30px 30px;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+/* header designing */
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    column-gap: 40px;
+}
+.shopHere{
+    padding: 7px;
+    border: none;
+    background-color: var(--darkblue--);
+    color: var(--white--);
+    margin-top: 10px;
+}
+.image-header{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+/* customer satisfaction */
+.cs1{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.cs2{
+    display: flex;
+    column-gap: 10px;
+    padding: 15px;
+
+}
+.cs2 div{
+    background-color: var(--greyishwhite--);
+    padding: 10px;
+}
+/* ARRIVALS SECTION */
+.arrivals-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.arrivals{
+    position: relative;
+    flex-basis: 50% 50%;
+}
+.arrivals button{
+    position: absolute;
+    top: 65%;
+    left: 85px;
+    background-color: var(--greyishwhite--);
+    border: none; 
+    padding: 10px;  
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.arrivals img{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+/* NEWS LETTER SECTION */
+.New-Letter-Wrapper{
+    padding: 10px;
+    text-align: center;
+}
+.New-Letter-Wrapper input,button,h2,p{
+    margin: 5px;
+}
+.New-Letter-Wrapper input{
+    width: 1000px;
+    height: 40px;
+    border: #1D232C 3px solid;
+}
+.New-Letter-Wrapper button{
+    border: none;
+    background-color: var(--darkblue--);
+    color: var(--white--);
+    padding: 12px;
+    border-radius: 8px;
+}
+/* Footer */
+.footer{
+    background-color: var(--darkblue--);
+    color: var(--white--);
+    padding: 40px 15px 40px 15px ;
+}
